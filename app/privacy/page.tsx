@@ -24,8 +24,8 @@ export default function PrivacyPage() {
       <h3>Account information</h3>
       <p>
         When you create an account, Quitify may collect your email address,
-        username, profile photo, and authentication details (for example, when
-        you sign in with Google or email).
+        username, profile photo, and authentication details when you sign in with
+        Google or email.
       </p>
 
       <h3>Profile and quit journey data</h3>
@@ -35,7 +35,7 @@ export default function PrivacyPage() {
       </p>
       <ul>
         <li>Reasons for quitting and motivation level</li>
-        <li>Quit date and smoking habits (like cigarettes per day and pack cost)</li>
+        <li>Quit date and smoking habits like cigarettes per day and pack cost</li>
         <li>Country and basic profile details you choose to share</li>
         <li>Progress through your quit plan, missions, streaks, and milestones</li>
         <li>Notes, posts, comments, and other community content you create</li>
@@ -45,8 +45,7 @@ export default function PrivacyPage() {
       <p>
         Certain technical information is collected automatically, including device
         type, operating system, app version, time zone, and general usage patterns
-        (such as features used and session duration) to improve the app and fix
-        issues.
+        such as features used and session duration to improve the app and fix issues.
       </p>
 
       <h3>Communications</h3>
@@ -61,7 +60,7 @@ export default function PrivacyPage() {
       <ul>
         <li>Provide, maintain, and personalize the Quitify app</li>
         <li>Generate your quit plan, tips, and progress tracking</li>
-        <li>Send notifications you opt into (like reminders and milestones)</li>
+        <li>Send notifications you opt into like reminders and milestones</li>
         <li>Enable community features and moderate content where applicable</li>
         <li>Respond to support requests and improve Quitify services</li>
         <li>Protect against fraud, abuse, and security incidents</li>
@@ -76,12 +75,12 @@ export default function PrivacyPage() {
       <ul>
         <li>
           <strong>Service providers:</strong> With trusted vendors who help
-          operate the app (hosting, analytics, authentication, push notifications),
-          under contractual obligations to protect your data.
+          operate the app through hosting, analytics, authentication, and push
+          notifications, under contractual obligations to protect your data.
         </li>
         <li>
           <strong>Community visibility:</strong> Content you post publicly in the
-          app (such as posts or profile information you choose to display) may be
+          app such as posts or profile information you choose to display may be
           visible to other users.
         </li>
         <li>
@@ -125,8 +124,8 @@ export default function PrivacyPage() {
 
       <h2>7. Children&apos;s privacy</h2>
       <p>
-        Quitify is not intended for users under the age of 18 (or the minimum age
-        required in your jurisdiction). Personal information from children is not
+        Quitify is not intended for users under the age of 18 or the minimum age
+        required in your jurisdiction. Personal information from children is not
         knowingly collected. If you believe a child has provided data to Quitify,
         please get in touch so it can be deleted.
       </p>
@@ -134,14 +133,14 @@ export default function PrivacyPage() {
       <h2>8. International transfers</h2>
       <p>
         Your information may be processed in countries other than your own. Where
-        required, appropriate safeguards are used for cross-border data transfers.
+        required, appropriate safeguards are used for cross border data transfers.
       </p>
 
       <h2>9. Changes to this policy</h2>
       <p>
         This Privacy Policy may be updated from time to time. The updated version
-        will be posted on this page with a revised &quot;Last updated&quot; date.
-        Continued use of Quitify after changes means you accept the revised policy.
+        will be posted on this page with a revised last updated date. Continued use
+        of Quitify after changes means you accept the revised policy.
       </p>
 
       <h2>10. Contact</h2>
