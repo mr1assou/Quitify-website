@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fffbf7;
+  --foreground: #3a322c;
+  --muted: #8a7b6e;
+  --primary: #ff7a00;
+  --primary-dark: #cc6200;
+  --primary-light: #ff9933;
+  --accent-soft: #fff0e0;
+  --section: #ffffff;
+  --border: #f0dfcc;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+  --color-accent-soft: var(--accent-soft);
+  --color-section: var(--section);
+  --color-border: var(--border);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+.legal-prose h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--foreground);
+}
+
+.legal-prose h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.legal-prose p,
+.legal-prose li {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.legal-prose p {
+  margin-bottom: 1rem;
+}
+
+.legal-prose ul {
+  margin-bottom: 1rem;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.legal-prose li {
+  margin-bottom: 0.35rem;
+}
+
+.legal-prose a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.legal-prose a:hover {
+  color: var(--primary-dark);
+}
+
+/* ── Home page animations ── */
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.75;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+.animate-float {
+  animation: float 5s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 6s ease-in-out infinite;
+}
+
+.animation-delay-1 {
+  animation-delay: 0.8s;
+}
+
+.animation-delay-2 {
+  animation-delay: 2s;
+}
+
+.hero-glow {
+  background:
+    radial-gradient(circle at 80% 20%, rgba(255, 122, 0, 0.12) 0%, transparent 50%),
+    radial-gradient(circle at 10% 80%, rgba(255, 179, 102, 0.1) 0%, transparent 45%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
