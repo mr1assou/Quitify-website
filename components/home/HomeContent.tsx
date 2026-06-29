@@ -39,8 +39,8 @@ function HeroSection() {
       <div className="pointer-events-none absolute -left-32 top-20 h-96 w-96 rounded-full bg-primary/15 blur-3xl animate-pulse-glow" />
       <div className="pointer-events-none absolute -right-20 bottom-10 h-80 w-80 rounded-full bg-amber-300/20 blur-3xl animate-pulse-glow animation-delay-2" />
 
-      <div className="relative mx-auto grid max-w-6xl gap-12 px-6 py-16 lg:grid-cols-2 lg:items-center lg:py-28">
-        <div>
+      <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:gap-12 sm:px-6 sm:py-16 lg:grid-cols-2 lg:items-center lg:py-28">
+        <div className="text-center lg:text-left">
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ function HeroSection() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="mt-6 text-4xl font-bold leading-[1.1] tracking-tight text-foreground sm:text-5xl lg:text-6xl"
+            className="mt-6 font-display text-3xl font-bold leading-[1.12] tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl"
           >
             Quit smoking.{" "}
             <span className="bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
@@ -66,9 +66,9 @@ function HeroSection() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="mt-5 max-w-lg text-lg leading-8 text-muted"
+            className="mx-auto mt-5 max-w-lg text-base leading-7 text-muted sm:text-lg sm:leading-8 lg:mx-0"
           >
-            Quitify is your daily companion — a personalized plan, craving
+            Quitify is your daily companion with a personalized plan, craving
             tools, progress tracking, and a community that has your back.
           </motion.p>
 
@@ -76,7 +76,7 @@ function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="mt-8 flex flex-wrap gap-3"
+            className="mt-8 flex flex-wrap justify-center gap-2.5 sm:gap-3 lg:justify-start"
           >
             {["iOS & Android", "Free to start", "No judgment"].map((tag) => (
               <span
@@ -117,11 +117,11 @@ function HeroSection() {
 function StatsBar() {
   return (
     <section className="border-y border-border bg-section/60 backdrop-blur-sm">
-      <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-6 py-12 sm:grid-cols-4 sm:gap-8 sm:py-14">
+      <div className="mx-auto grid max-w-6xl grid-cols-2 gap-4 px-4 py-10 sm:grid-cols-4 sm:gap-8 sm:px-6 sm:py-14">
         {stats.map((stat, i) => (
           <AnimateOnScroll key={stat.label} delay={i * 0.08} y={20}>
             <div className="text-center">
-              <p className="text-3xl font-bold tabular-nums text-foreground sm:text-4xl">
+              <p className="font-display text-2xl font-bold tabular-nums text-foreground sm:text-3xl md:text-4xl">
                 <CountUp end={stat.value} suffix={stat.suffix} />
               </p>
               <p className="mt-1 text-sm text-muted">{stat.label}</p>
@@ -138,21 +138,21 @@ function FeaturesSection() {
     <section id="features" className="relative overflow-hidden py-16 sm:py-24">
       <div className="pointer-events-none absolute right-0 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full bg-primary/5 blur-3xl" />
 
-      <div className="relative mx-auto max-w-6xl px-6">
+      <div className="relative mx-auto max-w-6xl px-4 sm:px-6">
         <AnimateOnScroll>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
             Features
           </p>
-          <h2 className="mt-3 text-3xl font-bold text-foreground sm:text-4xl">
+          <h2 className="font-display mt-3 text-2xl font-bold text-foreground sm:text-3xl md:text-4xl">
             Everything you need to quit
           </h2>
           <p className="mt-3 max-w-2xl text-lg text-muted">
-            From your first craving to your biggest milestone — Quitify is built
+            From your first craving to your biggest milestone, Quitify is built
             for every step of the journey.
           </p>
         </AnimateOnScroll>
 
-        <StaggerChildren className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <StaggerChildren className="mt-10 grid gap-4 sm:mt-12 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4">
           {features.map((feature) => (
             <motion.div
               key={feature.title}
@@ -166,7 +166,7 @@ function FeaturesSection() {
                 <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent-soft text-2xl transition-transform duration-300 group-hover:scale-110">
                   {feature.icon}
                 </span>
-                <h3 className="mt-4 text-lg font-semibold text-foreground">
+                <h3 className="font-display mt-4 text-base font-semibold text-foreground sm:text-lg">
                   {feature.title}
                 </h3>
                 <p className="mt-2 text-sm leading-6 text-muted">
@@ -184,28 +184,28 @@ function FeaturesSection() {
 function CravingToolsSection() {
   return (
     <section className="border-y border-border bg-gradient-to-b from-accent-soft/50 to-background py-16 sm:py-24">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <AnimateOnScroll>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
               Craving support
             </p>
-            <h2 className="mt-3 text-3xl font-bold text-foreground sm:text-4xl">
-              When the urge hits, we&apos;re ready
+            <h2 className="font-display mt-3 text-2xl font-bold text-foreground sm:text-3xl md:text-4xl">
+              When the urge hits, Quitify is ready
             </h2>
             <p className="mt-4 text-lg text-muted">
               Cravings peak and pass. Quitify gives you the right tool in the
-              moment — tips, motivation, calm sounds, or a quick game to ride it
-              out.
+              moment, whether that is tips, motivation, calm sounds, or a quick
+              game to ride it out.
             </p>
           </AnimateOnScroll>
 
-          <StaggerChildren className="grid grid-cols-2 gap-4" stagger={0.12}>
+          <StaggerChildren className="grid grid-cols-2 gap-3 sm:gap-4" stagger={0.12}>
             {cravingTools.map((tool) => (
               <motion.div
                 key={tool.title}
                 variants={staggerItem}
-                className="rounded-2xl border border-border bg-section p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+                className="rounded-2xl border border-border bg-section p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md sm:p-5"
               >
                 <span className="text-3xl">{tool.emoji}</span>
                 <h3 className="mt-3 font-semibold text-foreground">
@@ -224,13 +224,13 @@ function CravingToolsSection() {
 function HowItWorksSection() {
   return (
     <section className="py-16 sm:py-24">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <AnimateOnScroll className="text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
             How it works
           </p>
-          <h2 className="mt-3 text-3xl font-bold text-foreground sm:text-4xl">
-            Three steps to smoke-free
+          <h2 className="font-display mt-3 text-2xl font-bold text-foreground sm:text-3xl md:text-4xl">
+            Three steps to smoke free
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-muted">
             Simple onboarding. A plan built for you. Daily wins that add up.
@@ -268,16 +268,16 @@ function HowItWorksSection() {
 function BadgesSection() {
   return (
     <section className="border-t border-border bg-section py-16 sm:py-20">
-      <div className="mx-auto max-w-6xl px-6">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <AnimateOnScroll className="text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
             Achievements
           </p>
-          <h2 className="mt-3 text-3xl font-bold text-foreground sm:text-4xl">
+          <h2 className="font-display mt-3 text-2xl font-bold text-foreground sm:text-3xl md:text-4xl">
             Celebrate every win
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-muted">
-            Unlock badges as you hit milestones — from your first smoke-free day
+            Unlock badges as you hit milestones, from your first smoke free day
             to six months and beyond.
           </p>
         </AnimateOnScroll>
@@ -315,19 +315,19 @@ function BadgesSection() {
 
 function CtaSection() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
+    <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-20">
       <AnimateOnScroll y={40}>
         <div className="relative overflow-hidden rounded-[2rem] border border-border bg-gradient-to-br from-primary/10 via-accent-soft to-section p-8 sm:p-14">
           <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-primary/20 blur-3xl animate-pulse-glow" />
 
           <div className="relative grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
-              <h2 className="text-3xl font-bold text-foreground sm:text-4xl">
+              <h2 className="font-display text-2xl font-bold text-foreground sm:text-3xl md:text-4xl">
                 Ready when you are
               </h2>
               <p className="mt-4 max-w-xl text-lg text-muted">
-                Thousands have taken the first step. Your smoke-free story starts
-                with one decision — and Quitify walks with you every day after.
+                Thousands have taken the first step. Your smoke free story starts
+                with one decision, and Quitify walks with you every day after.
               </p>
               <p className="mt-6 text-sm font-semibold text-primary">
                 Coming soon to iOS & Android
@@ -356,7 +356,7 @@ function CtaSection() {
 function LegalSection() {
   return (
     <section className="border-t border-border bg-section">
-      <div className="mx-auto max-w-6xl px-6 py-12">
+      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12">
         <AnimateOnScroll y={20}>
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div>

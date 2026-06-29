@@ -15,27 +15,27 @@ export default function PrivacyPage() {
       lastUpdated="June 28, 2026"
     >
       <p>
-        Quitify (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) operates the Quitify mobile
-        application and this website. This Privacy Policy explains how we collect,
-        use, disclose, and safeguard your information when you use our services.
+        Quitify operates the Quitify mobile application and this website. This
+        Privacy Policy explains how personal information is collected, used,
+        disclosed, and safeguarded when you use Quitify services.
       </p>
 
-      <h2>1. Information we collect</h2>
+      <h2>1. Information collected</h2>
       <h3>Account information</h3>
       <p>
-        When you create an account, we may collect your email address, username,
-        profile photo, and authentication details (for example, when you sign in
-        with Google or email).
+        When you create an account, Quitify may collect your email address,
+        username, profile photo, and authentication details (for example, when
+        you sign in with Google or email).
       </p>
 
       <h3>Profile and quit journey data</h3>
       <p>
-        To personalize your experience, we collect information you provide during
-        onboarding and in the app, such as:
+        To personalize your experience, Quitify collects information you provide
+        during onboarding and in the app, such as:
       </p>
       <ul>
         <li>Reasons for quitting and motivation level</li>
-        <li>Quit date and smoking habits (e.g. cigarettes per day, pack cost)</li>
+        <li>Quit date and smoking habits (like cigarettes per day and pack cost)</li>
         <li>Country and basic profile details you choose to share</li>
         <li>Progress through your quit plan, missions, streaks, and milestones</li>
         <li>Notes, posts, comments, and other community content you create</li>
@@ -43,7 +43,7 @@ export default function PrivacyPage() {
 
       <h3>Usage and device data</h3>
       <p>
-        We automatically collect certain technical information, including device
+        Certain technical information is collected automatically, including device
         type, operating system, app version, time zone, and general usage patterns
         (such as features used and session duration) to improve the app and fix
         issues.
@@ -51,31 +51,31 @@ export default function PrivacyPage() {
 
       <h3>Communications</h3>
       <p>
-        If you use voice or video features, we process connection data required to
-        enable those calls. We do not record calls unless clearly stated and with
-        your consent.
+        If you use voice or video features, connection data required to enable
+        those calls is processed. Calls are not recorded unless clearly stated and
+        with your consent.
       </p>
 
-      <h2>2. How we use your information</h2>
-      <p>We use the information we collect to:</p>
+      <h2>2. How your information is used</h2>
+      <p>Collected information is used to:</p>
       <ul>
         <li>Provide, maintain, and personalize the Quitify app</li>
         <li>Generate your quit plan, tips, and progress tracking</li>
-        <li>Send notifications you opt into (e.g. reminders and milestones)</li>
+        <li>Send notifications you opt into (like reminders and milestones)</li>
         <li>Enable community features and moderate content where applicable</li>
-        <li>Respond to support requests and improve our services</li>
+        <li>Respond to support requests and improve Quitify services</li>
         <li>Protect against fraud, abuse, and security incidents</li>
         <li>Comply with legal obligations</li>
       </ul>
 
-      <h2>3. How we share information</h2>
+      <h2>3. How information is shared</h2>
       <p>
-        We do not sell your personal information. We may share information only in
-        these situations:
+        Quitify does not sell your personal information. Information may be shared
+        only in these situations:
       </p>
       <ul>
         <li>
-          <strong>Service providers:</strong> With trusted vendors who help us
+          <strong>Service providers:</strong> With trusted vendors who help
           operate the app (hosting, analytics, authentication, push notifications),
           under contractual obligations to protect your data.
         </li>
@@ -96,10 +96,10 @@ export default function PrivacyPage() {
 
       <h2>4. Data retention</h2>
       <p>
-        We retain your information for as long as your account is active or as
+        Your information is retained for as long as your account is active or as
         needed to provide services, comply with legal obligations, resolve
-        disputes, and enforce our agreements. You may request deletion of your
-        account and associated data by contacting us.
+        disputes, and enforce agreements. You may request deletion of your account
+        and associated data by contacting Quitify.
       </p>
 
       <h2>5. Your choices and rights</h2>
@@ -118,40 +118,39 @@ export default function PrivacyPage() {
 
       <h2>6. Security</h2>
       <p>
-        We use reasonable administrative, technical, and organizational measures to
-        protect your information. No method of transmission or storage is 100%
-        secure, and we cannot guarantee absolute security.
+        Reasonable administrative, technical, and organizational measures are used
+        to protect your information. No method of transmission or storage is 100%
+        secure, and absolute security cannot be guaranteed.
       </p>
 
       <h2>7. Children&apos;s privacy</h2>
       <p>
         Quitify is not intended for users under the age of 18 (or the minimum age
-        required in your jurisdiction). We do not knowingly collect personal
-        information from children. If you believe a child has provided us data,
-        please contact us so we can delete it.
+        required in your jurisdiction). Personal information from children is not
+        knowingly collected. If you believe a child has provided data to Quitify,
+        please get in touch so it can be deleted.
       </p>
 
       <h2>8. International transfers</h2>
       <p>
         Your information may be processed in countries other than your own. Where
-        required, we use appropriate safeguards for cross-border data transfers.
+        required, appropriate safeguards are used for cross-border data transfers.
       </p>
 
       <h2>9. Changes to this policy</h2>
       <p>
-        We may update this Privacy Policy from time to time. We will post the
-        updated version on this page and update the &quot;Last updated&quot; date.
+        This Privacy Policy may be updated from time to time. The updated version
+        will be posted on this page with a revised &quot;Last updated&quot; date.
         Continued use of Quitify after changes means you accept the revised policy.
       </p>
 
-      <h2>10. Contact us</h2>
+      <h2>10. Contact</h2>
       <p>
-        If you have questions about this Privacy Policy or your data, contact us
-        at{" "}
+        Questions about this Privacy Policy or your data can be sent to{" "}
         <a href="mailto:privacy@quitify.app">privacy@quitify.app</a>.
       </p>
       <p>
-        See also our{" "}
+        See also the{" "}
         <Link href="/terms">Terms &amp; Conditions</Link>.
       </p>
     </LegalPageLayout>

@@ -8,9 +8,9 @@ export const stats = [
 export const features = [
   {
     icon: "🗺️",
-    title: "180-day quit plan",
+    title: "180 day quit plan",
     description:
-      "Seven guided modules with daily missions that unlock as you progress — one day at a time.",
+      "Seven guided modules with daily missions that unlock as you progress, one day at a time.",
     accent: "from-orange-400/20 to-amber-100/40",
   },
   {
@@ -24,7 +24,7 @@ export const features = [
     icon: "💡",
     title: "1,500+ tips & cards",
     description:
-      "Practical tips and motivational cards for every mood — from cravings to big wins.",
+      "Practical tips and motivational cards for every mood, from cravings to big wins.",
     accent: "from-amber-400/20 to-yellow-100/30",
   },
   {
@@ -38,7 +38,7 @@ export const features = [
     icon: "🎯",
     title: "Personal goals",
     description:
-      "Set targets for savings, smoke-free days, and milestones. Earn badges as you level up.",
+      "Set targets for savings, smoke free days, and milestones. Earn badges as you level up.",
     accent: "from-violet-400/15 to-purple-100/30",
   },
   {
@@ -91,12 +91,12 @@ export const steps = [
   {
     step: "01",
     title: "Tell us your story",
-    description: "Quick onboarding — your reasons, habits, and quit date.",
+    description: "Quick onboarding covers your reasons, habits, and quit date.",
   },
   {
     step: "02",
     title: "Get your plan",
-    description: "We build a personalized 180-day roadmap around you.",
+    description: "Quitify builds a personalized 180 day roadmap around you.",
   },
   {
     step: "03",

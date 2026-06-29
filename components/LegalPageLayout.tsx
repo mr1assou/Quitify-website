@@ -17,7 +17,7 @@ export function LegalPageLayout({
   children,
 }: Props) {
   return (
-    <article className="mx-auto max-w-3xl px-6 py-12 sm:py-16">
+    <article className="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-16">
       <motion.p
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
@@ -30,7 +30,7 @@ export function LegalPageLayout({
         initial={{ opacity: 0, y: 16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.05 }}
-        className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl"
+        className="font-display mt-3 text-2xl font-bold text-foreground sm:text-3xl md:text-4xl"
       >
         {title}
       </motion.h1>
@@ -47,7 +47,7 @@ export function LegalPageLayout({
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-        className="legal-prose mt-10 rounded-3xl border border-border bg-section p-6 shadow-sm sm:p-10"
+        className="legal-prose mt-8 rounded-2xl border border-border bg-section p-5 shadow-sm sm:mt-10 sm:rounded-3xl sm:p-10"
       >
         {children}
       </motion.div>
