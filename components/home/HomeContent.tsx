@@ -37,7 +37,7 @@ function HeroSection() {
     <section className="relative overflow-hidden">
       <div className="hero-glow pointer-events-none absolute inset-0" />
       <div className="pointer-events-none absolute -left-32 top-20 h-96 w-96 rounded-full bg-primary/15 blur-3xl animate-pulse-glow" />
-      <div className="pointer-events-none absolute -right-20 bottom-10 h-80 w-80 rounded-full bg-amber-300/20 blur-3xl animate-pulse-glow animation-delay-2" />
+      <div className="pointer-events-none absolute -right-20 bottom-10 h-80 w-80 rounded-full bg-primary/15 blur-3xl animate-pulse-glow animation-delay-2" />
 
       <div className="relative mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:gap-12 sm:px-6 sm:py-16 lg:grid-cols-2 lg:items-center lg:py-28">
         <div className="text-center lg:text-left">
@@ -116,7 +116,7 @@ function HeroSection() {
 
 function StatsBar() {
   return (
-    <section className="border-y border-border bg-section/60 backdrop-blur-sm">
+    <section className="border-y border-border bg-section/80 backdrop-blur-sm">
       <div className="mx-auto grid max-w-6xl grid-cols-2 gap-4 px-4 py-10 sm:grid-cols-4 sm:gap-8 sm:px-6 sm:py-14">
         {stats.map((stat, i) => (
           <AnimateOnScroll key={stat.label} delay={i * 0.08} y={20}>
@@ -157,7 +157,7 @@ function FeaturesSection() {
             <motion.div
               key={feature.title}
               variants={staggerItem}
-              className="group relative overflow-hidden rounded-2xl border border-border bg-section p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/10"
+              className="group relative overflow-hidden rounded-2xl border border-border bg-elevated p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg hover:shadow-primary/15"
             >
               <div
                 className={`absolute inset-0 bg-gradient-to-br ${feature.accent} opacity-0 transition-opacity duration-300 group-hover:opacity-100`}
@@ -183,7 +183,7 @@ function FeaturesSection() {
 
 function CravingToolsSection() {
   return (
-    <section className="border-y border-border bg-gradient-to-b from-accent-soft/50 to-background py-16 sm:py-24">
+    <section className="border-y border-border bg-gradient-to-b from-accent-soft/80 to-background py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <AnimateOnScroll>
@@ -205,7 +205,7 @@ function CravingToolsSection() {
               <motion.div
                 key={tool.title}
                 variants={staggerItem}
-                className="rounded-2xl border border-border bg-section p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md sm:p-5"
+                className="rounded-2xl border border-border bg-elevated p-4 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-primary/30 hover:shadow-md sm:p-5"
               >
                 <span className="text-3xl">{tool.emoji}</span>
                 <h3 className="mt-3 font-semibold text-foreground">
@@ -317,7 +317,7 @@ function CtaSection() {
   return (
     <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-20">
       <AnimateOnScroll y={40}>
-        <div className="relative overflow-hidden rounded-[2rem] border border-border bg-gradient-to-br from-primary/10 via-accent-soft to-section p-8 sm:p-14">
+        <div className="relative overflow-hidden rounded-[2rem] border border-border bg-gradient-to-br from-primary/15 via-accent-soft to-elevated p-8 sm:p-14">
           <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-primary/20 blur-3xl animate-pulse-glow" />
 
           <div className="relative grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
@@ -374,7 +374,7 @@ function LegalSection() {
               </Link>
               <Link
                 href="/terms"
-                className="inline-flex items-center justify-center rounded-full border border-border bg-background px-5 py-2.5 text-sm font-semibold text-foreground transition-all hover:scale-105 hover:bg-accent-soft"
+                className="inline-flex items-center justify-center rounded-full border border-border bg-elevated px-5 py-2.5 text-sm font-semibold text-foreground transition-all hover:scale-105 hover:bg-accent-soft"
               >
                 Terms & Conditions
               </Link>

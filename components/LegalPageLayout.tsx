@@ -47,7 +47,7 @@ export function LegalPageLayout({
         initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-        className="legal-prose mt-8 rounded-2xl border border-border bg-section p-5 shadow-sm sm:mt-10 sm:rounded-3xl sm:p-10"
+        className="legal-prose mt-8 rounded-2xl border border-border bg-elevated p-5 shadow-sm sm:mt-10 sm:rounded-3xl sm:p-10"
       >
         {children}
       </motion.div>

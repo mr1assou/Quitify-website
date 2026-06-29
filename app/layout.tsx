@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -30,6 +30,10 @@ export const metadata: Metadata = {
     apple: [{ url: "/logo.webp", type: "image/png" }],
     shortcut: "/logo1.png",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#1a1410",
 };
 
 export default function RootLayout({

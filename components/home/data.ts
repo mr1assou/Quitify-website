@@ -11,56 +11,56 @@ export const features = [
     title: "180 day quit plan",
     description:
       "Seven guided modules with daily missions that unlock as you progress, one day at a time.",
-    accent: "from-orange-400/20 to-amber-100/40",
+    accent: "from-primary/25 to-orange-950/50",
   },
   {
     icon: "🔥",
-    title: "Smoke-free streak",
+    title: "Smoke free streak",
     description:
       "Watch your streak grow in real time. Track money saved, cigarettes avoided, and life gained.",
-    accent: "from-rose-400/15 to-orange-100/40",
+    accent: "from-orange-500/20 to-red-950/40",
   },
   {
     icon: "💡",
     title: "1,500+ tips & cards",
     description:
       "Practical tips and motivational cards for every mood, from cravings to big wins.",
-    accent: "from-amber-400/20 to-yellow-100/30",
+    accent: "from-amber-500/20 to-orange-950/40",
   },
   {
     icon: "🧘",
     title: "Craving tools",
     description:
       "Breathing exercises, relax sounds, and distraction games when the urge hits hardest.",
-    accent: "from-emerald-400/15 to-teal-100/30",
+    accent: "from-emerald-500/15 to-emerald-950/40",
   },
   {
     icon: "🎯",
     title: "Personal goals",
     description:
       "Set targets for savings, smoke free days, and milestones. Earn badges as you level up.",
-    accent: "from-violet-400/15 to-purple-100/30",
+    accent: "from-violet-500/15 to-violet-950/40",
   },
   {
     icon: "📊",
     title: "Stats & recovery",
     description:
       "See your health recovery rings, progress charts, and insights that keep you motivated.",
-    accent: "from-sky-400/15 to-blue-100/30",
+    accent: "from-sky-500/15 to-sky-950/40",
   },
   {
     icon: "👥",
     title: "Community",
     description:
       "Share your journey, celebrate wins, and connect with people who understand the struggle.",
-    accent: "from-pink-400/15 to-rose-100/30",
+    accent: "from-pink-500/15 to-rose-950/40",
   },
   {
     icon: "💬",
     title: "Chat & calls",
     description:
       "Message friends and get support through voice and video when you need someone to talk to.",
-    accent: "from-indigo-400/15 to-slate-100/30",
+    accent: "from-indigo-500/15 to-indigo-950/40",
   },
 ] as const;
 
