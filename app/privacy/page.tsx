@@ -98,7 +98,8 @@ export default function PrivacyPage() {
         Your information is retained for as long as your account is active or as
         needed to provide services, comply with legal obligations, resolve
         disputes, and enforce agreements. You may request deletion of your account
-        and associated data by contacting Quitify.
+        and associated data on our{" "}
+        <Link href="/delete-account">account deletion page</Link>.
       </p>
 
       <h2>5. Your choices and rights</h2>
