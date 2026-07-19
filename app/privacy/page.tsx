@@ -147,7 +147,7 @@ export default function PrivacyPage() {
       <h2>10. Contact</h2>
       <p>
         Questions about this Privacy Policy or your data can be sent to{" "}
-        <a href="mailto:privacy@quitify.app">privacy@quitify.app</a>.
+        <a href="mailto:lahcini.moaa@gmail.com">lahcini.moaa@gmail.com</a>.
       </p>
       <p>
         See also the{" "}

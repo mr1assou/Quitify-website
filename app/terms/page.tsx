@@ -160,7 +160,7 @@ export default function TermsPage() {
       <h2>16. Contact</h2>
       <p>
         Questions about these terms can be sent to{" "}
-        <a href="mailto:legal@quitify.app">legal@quitify.app</a>.
+        <a href="mailto:lahcini.moaa@gmail.com">lahcini.moaa@gmail.com</a>.
       </p>
     </LegalPageLayout>
   );

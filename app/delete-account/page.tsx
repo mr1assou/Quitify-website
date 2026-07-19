@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { LegalPageLayout } from "@/components/LegalPageLayout";
 
-const ACCOUNT_DELETION_EMAIL = "hamza.assou.2006@gmail.com";
+const ACCOUNT_DELETION_EMAIL = "lahcini.moaa@gmail.com";
 
 export const metadata: Metadata = {
   title: "Delete Account",
