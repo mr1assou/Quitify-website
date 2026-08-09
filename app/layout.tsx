@@ -26,9 +26,9 @@ export const metadata: Metadata = {
   description:
     "Quitify helps you quit smoking with a personalized plan, craving tools, daily missions, and community support.",
   icons: {
-    icon: [{ url: "/logo.webp", type: "image/png" }],
-    apple: [{ url: "/logo.webp", type: "image/png" }],
-    shortcut: "/logo1.png",
+    icon: [{ url: "/logo.webp", type: "image/webp" }],
+    apple: [{ url: "/logo.webp", type: "image/webp" }],
+    shortcut: "/logo.webp",
   },
 };
 
