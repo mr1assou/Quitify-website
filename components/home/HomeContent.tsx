@@ -9,6 +9,7 @@ import {
   staggerItem,
 } from "@/components/AnimateOnScroll";
 import { CountUp } from "@/components/CountUp";
+import { GooglePlayButton } from "@/components/GooglePlayButton";
 import {
   badges,
   cravingTools,
@@ -76,16 +77,19 @@ function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="mt-8 flex flex-wrap justify-center gap-2.5 sm:gap-3 lg:justify-start"
+            className="mt-8 flex flex-col items-center gap-4 lg:items-start"
           >
-            {["iOS & Android", "Free to start", "No judgment"].map((tag) => (
-              <span
-                key={tag}
-                className="inline-flex items-center rounded-full border border-border bg-section/80 px-4 py-2 text-sm font-medium text-foreground shadow-sm backdrop-blur-sm transition-transform hover:scale-105"
-              >
-                {tag}
-              </span>
-            ))}
+            <GooglePlayButton size="lg" />
+            <div className="flex flex-wrap justify-center gap-2.5 sm:gap-3 lg:justify-start">
+              {["Android", "Free to start", "No judgment"].map((tag) => (
+                <span
+                  key={tag}
+                  className="inline-flex items-center rounded-full border border-border bg-section/80 px-4 py-2 text-sm font-medium text-foreground shadow-sm backdrop-blur-sm transition-transform hover:scale-105"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
           </motion.div>
         </div>
 
@@ -329,9 +333,9 @@ function CtaSection() {
                 Thousands have taken the first step. Your smoke free story starts
                 with one decision, and Quitify walks with you every day after.
               </p>
-              <p className="mt-6 text-sm font-semibold text-primary">
-                Coming soon to iOS & Android
-              </p>
+              <div className="mt-8">
+                <GooglePlayButton size="lg" />
+              </div>
             </div>
 
             <motion.div

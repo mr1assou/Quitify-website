@@ -6,6 +6,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
+import { GooglePlayButton } from "@/components/GooglePlayButton";
+
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/#features", label: "Features" },
@@ -97,6 +99,7 @@ export function Header() {
               {link.label}
             </Link>
           ))}
+          <GooglePlayButton className="ml-2" />
         </nav>
 
         {/* Mobile toggle */}
@@ -150,6 +153,14 @@ export function Header() {
                     </Link>
                   </motion.li>
                 ))}
+                <motion.li
+                  initial={{ opacity: 0, x: -12 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ delay: navLinks.length * 0.05, duration: 0.3 }}
+                  className="mt-2 px-1"
+                >
+                  <GooglePlayButton className="w-full" size="lg" />
+                </motion.li>
               </ul>
             </motion.nav>
           </>

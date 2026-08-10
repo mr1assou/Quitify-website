@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import { GooglePlayButton } from "@/components/GooglePlayButton";
+
 export function Footer() {
   const year = new Date().getFullYear();
 
@@ -11,6 +13,9 @@ export function Footer() {
           <p className="mt-1 text-sm text-muted">
             Your companion for a smoke free life.
           </p>
+          <div className="mt-4">
+            <GooglePlayButton />
+          </div>
         </div>
 
         <div className="flex flex-wrap gap-4 text-sm">
