@@ -139,7 +139,10 @@ function StatsBar() {
 
 function FeaturesSection() {
   return (
-    <section id="features" className="relative overflow-hidden py-16 sm:py-24">
+    <section
+      id="features"
+      className="relative scroll-mt-20 overflow-hidden py-16 sm:py-24"
+    >
       <div className="pointer-events-none absolute right-0 top-1/2 h-64 w-64 -translate-y-1/2 rounded-full bg-primary/5 blur-3xl" />
 
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6">

@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState, type MouseEvent } from "react";
 
 import { GooglePlayButton } from "@/components/GooglePlayButton";
 
@@ -14,6 +14,16 @@ const navLinks = [
   { href: "/privacy", label: "Privacy" },
   { href: "/terms", label: "Terms" },
 ];
+
+function scrollToHash(hash: string) {
+  const id = hash.replace(/^#/, "");
+  if (!id) return;
+
+  const el = document.getElementById(id);
+  if (!el) return;
+
+  el.scrollIntoView({ behavior: "smooth", block: "start" });
+}
 
 function MenuIcon({ open }: { open: boolean }) {
   return (
@@ -60,6 +70,38 @@ export function Header() {
     };
   }, [menuOpen]);
 
+  // Next.js often skips hash scrolling after client navigations — handle it ourselves.
+  useEffect(() => {
+    if (pathname !== "/") return;
+
+    const run = () => {
+      if (window.location.hash) scrollToHash(window.location.hash);
+    };
+
+    run();
+    const t = window.setTimeout(run, 80);
+    return () => window.clearTimeout(t);
+  }, [pathname]);
+
+  const onNavClick = useCallback(
+    (event: MouseEvent<HTMLAnchorElement>, href: string) => {
+      setMenuOpen(false);
+
+      const hashIndex = href.indexOf("#");
+      if (hashIndex === -1) return;
+
+      const hash = href.slice(hashIndex);
+      const path = href.slice(0, hashIndex) || "/";
+
+      if (pathname !== path) return;
+
+      event.preventDefault();
+      window.history.pushState(null, "", href);
+      scrollToHash(hash);
+    },
+    [pathname],
+  );
+
   return (
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
@@ -94,6 +136,7 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
+              onClick={(event) => onNavClick(event, link.href)}
               className="rounded-full px-4 py-2 text-sm font-medium text-muted transition-all hover:bg-accent-soft hover:text-foreground"
             >
               {link.label}
@@ -147,7 +190,7 @@ export function Header() {
                     <Link
                       href={link.href}
                       className="block rounded-xl px-4 py-3.5 text-base font-medium text-foreground transition-colors hover:bg-accent-soft"
-                      onClick={() => setMenuOpen(false)}
+                      onClick={(event) => onNavClick(event, link.href)}
                     >
                       {link.label}
                     </Link>
