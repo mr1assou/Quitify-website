@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { LegalPageLayout } from "@/components/LegalPageLayout";
+import { COMPANY_WEBSITE_URL } from "@/lib/company";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
@@ -28,16 +29,16 @@ export default function PrivacyPage() {
         Google or email.
       </p>
 
-      <h3>Profile and quit journey data</h3>
+      <h3>Profile and habit journey data</h3>
       <p>
         To personalize your experience, Quitify collects information you provide
         during onboarding and in the app, such as:
       </p>
       <ul>
-        <li>Reasons for quitting and motivation level</li>
-        <li>Quit date and smoking habits like cigarettes per day and pack cost</li>
+        <li>Goals, motivations, and reasons for changing your routine</li>
+        <li>Start date and habit details you choose to share (for example daily frequency and related costs)</li>
         <li>Country and basic profile details you choose to share</li>
-        <li>Progress through your quit plan, missions, streaks, and milestones</li>
+        <li>Progress through your habit plan, missions, streaks, and milestones</li>
         <li>Notes, posts, comments, and other community content you create</li>
       </ul>
 
@@ -59,7 +60,7 @@ export default function PrivacyPage() {
       <p>Collected information is used to:</p>
       <ul>
         <li>Provide, maintain, and personalize the Quitify app</li>
-        <li>Generate your quit plan, tips, and progress tracking</li>
+        <li>Generate your productivity plan, habit tips, and progress tracking</li>
         <li>Send notifications you opt into like reminders and milestones</li>
         <li>Enable community features and moderate content where applicable</li>
         <li>Respond to support requests and improve Quitify services</li>
@@ -146,8 +147,12 @@ export default function PrivacyPage() {
 
       <h2>10. Contact</h2>
       <p>
-        Questions about this Privacy Policy or your data can be sent to{" "}
-        <a href="mailto:lahcini.moaa@gmail.com">lahcini.moaa@gmail.com</a>.
+        Quitify is developed by POTTY PAW LTD. Questions about this Privacy Policy
+        or your data can be sent through{" "}
+        <a href={COMPANY_WEBSITE_URL} target="_blank" rel="noopener noreferrer">
+          www.pottypawltd.com
+        </a>
+        .
       </p>
       <p>
         See also the{" "}

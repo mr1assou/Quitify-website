@@ -12,7 +12,7 @@ import { CountUp } from "@/components/CountUp";
 import { GooglePlayButton } from "@/components/GooglePlayButton";
 import {
   badges,
-  cravingTools,
+  habitTools,
   features,
   stats,
   steps,
@@ -24,7 +24,7 @@ export function HomeContent() {
       <HeroSection />
       <StatsBar />
       <FeaturesSection />
-      <CravingToolsSection />
+      <HabitToolsSection />
       <HowItWorksSection />
       <BadgesSection />
       <CtaSection />
@@ -48,7 +48,7 @@ function HeroSection() {
             transition={{ duration: 0.5 }}
             className="inline-flex rounded-full border border-primary/20 bg-accent-soft px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary"
           >
-            Smoke-free starts here
+            Habit tools for a productive lifestyle
           </motion.p>
 
           <motion.h1
@@ -57,9 +57,9 @@ function HeroSection() {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="mt-6 font-display text-3xl font-bold leading-[1.12] tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-6xl"
           >
-            Quit smoking.{" "}
+            Lifestyle habits.{" "}
             <span className="bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent">
-              For real this time.
+              Productivity that sticks.
             </span>
           </motion.h1>
 
@@ -69,8 +69,9 @@ function HeroSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mx-auto mt-5 max-w-lg text-base leading-7 text-muted sm:text-lg sm:leading-8 lg:mx-0"
           >
-            Quitify is your daily companion with a personalized plan, craving
-            tools, progress tracking, and a community that has your back.
+            Quitify is a lifestyle and productivity app with habit tools, a
+            personalized daily plan, progress tracking, and community
+            accountability, built to help you stay consistent.
           </motion.p>
 
           <motion.div
@@ -81,7 +82,7 @@ function HeroSection() {
           >
             <GooglePlayButton size="lg" />
             <div className="flex flex-wrap justify-center gap-2.5 sm:gap-3 lg:justify-start">
-              {["Android", "Free to start", "No judgment"].map((tag) => (
+              {["Android", "Free to start", "Habits · Focus · Lifestyle"].map((tag) => (
                 <span
                   key={tag}
                   className="inline-flex items-center rounded-full border border-border bg-section/80 px-4 py-2 text-sm font-medium text-foreground shadow-sm backdrop-blur-sm transition-transform hover:scale-105"
@@ -104,7 +105,7 @@ function HeroSection() {
             <div className="animate-float relative overflow-hidden rounded-[2rem] border border-border bg-section p-6 shadow-xl shadow-primary/10">
               <Image
                 src="/after_onboard.webp"
-                alt="Quitify app illustration"
+                alt="Quitify lifestyle and productivity app illustration"
                 width={480}
                 height={480}
                 className="mx-auto h-auto w-full max-w-sm object-contain"
@@ -151,11 +152,11 @@ function FeaturesSection() {
             Features
           </p>
           <h2 className="font-display mt-3 text-2xl font-bold text-foreground sm:text-3xl md:text-4xl">
-            Everything you need to quit
+            Lifestyle, habit tools, and productivity in one place
           </h2>
           <p className="mt-3 max-w-2xl text-lg text-muted">
-            From your first craving to your biggest milestone, Quitify is built
-            for every step of the journey.
+            Plan your days, stay focused, track progress, and build routines that
+            make you more consistent and more productive.
           </p>
         </AnimateOnScroll>
 
@@ -188,27 +189,27 @@ function FeaturesSection() {
   );
 }
 
-function CravingToolsSection() {
+function HabitToolsSection() {
   return (
     <section className="border-y border-border bg-gradient-to-b from-accent-soft/80 to-background py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           <AnimateOnScroll>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-primary">
-              Craving support
+              Habit tools
             </p>
             <h2 className="font-display mt-3 text-2xl font-bold text-foreground sm:text-3xl md:text-4xl">
-              When the urge hits, Quitify is ready
+              Productivity tools for everyday focus
             </h2>
             <p className="mt-4 text-lg text-muted">
-              Cravings peak and pass. Quitify gives you the right tool in the
-              moment, whether that is tips, motivation, calm sounds, or a quick
-              game to ride it out.
+              Stay in flow with practical habit tools: tips, motivation cards,
+              focus sounds, and short reset games when you need a clear head
+              before your next mission.
             </p>
           </AnimateOnScroll>
 
           <StaggerChildren className="grid grid-cols-2 gap-3 sm:gap-4" stagger={0.12}>
-            {cravingTools.map((tool) => (
+            {habitTools.map((tool) => (
               <motion.div
                 key={tool.title}
                 variants={staggerItem}
@@ -237,10 +238,11 @@ function HowItWorksSection() {
             How it works
           </p>
           <h2 className="font-display mt-3 text-2xl font-bold text-foreground sm:text-3xl md:text-4xl">
-            Three steps to smoke free
+            Three steps to a productive lifestyle
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-muted">
-            Simple onboarding. A plan built for you. Daily wins that add up.
+            Simple setup. A plan built for you. Daily habits that compound into
+            better focus and results.
           </p>
         </AnimateOnScroll>
 
@@ -284,8 +286,8 @@ function BadgesSection() {
             Celebrate every win
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-muted">
-            Unlock badges as you hit milestones, from your first smoke free day
-            to six months and beyond.
+            Unlock badges as you hit lifestyle and productivity milestones,
+            from your first streak day to six months of consistency.
           </p>
         </AnimateOnScroll>
 
@@ -333,8 +335,8 @@ function CtaSection() {
                 Ready when you are
               </h2>
               <p className="mt-4 max-w-xl text-lg text-muted">
-                Thousands have taken the first step. Your smoke free story starts
-                with one decision, and Quitify walks with you every day after.
+                Start building a more productive lifestyle today. Quitify gives
+                you the plan, habit tools, and daily structure to stay consistent.
               </p>
               <div className="mt-8">
                 <GooglePlayButton size="lg" />

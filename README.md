@@ -1,12 +1,13 @@
 # Quitify Website
 
-Marketing and legal site for the Quitify mobile app.
+Marketing and legal site for Quitify: a lifestyle, habit-tools, and productivity app.
 
 ## Pages
 
-- `/` — Home
-- `/privacy` — Privacy Policy
-- `/terms` — Terms & Conditions
+- `/` - Home
+- `/privacy` - Privacy Policy
+- `/terms` - Terms & Conditions
+- `/delete-account` - Account deletion instructions
 
 ## Development
 
@@ -26,4 +27,4 @@ npm start
 
 ## Branding
 
-Colors and imagery match the Quitify mobile app (`#FF7A00` primary, warm cream background).
+Colors and imagery match the Quitify mobile app (`#FF7A00` primary).

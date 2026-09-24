@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { LegalPageLayout } from "@/components/LegalPageLayout";
+import { COMPANY_WEBSITE_URL } from "@/lib/company";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions",
@@ -35,18 +36,21 @@ export default function TermsPage() {
         suspended or terminated.
       </p>
 
-      <h2>3. Health disclaimer</h2>
+      <h2>3. Lifestyle, habit tools &amp; productivity</h2>
       <p>
-        Quitify provides educational content, habit tracking tools, and community
-        support to help you quit smoking. <strong>Quitify is not a medical device
-        and does not provide medical advice, diagnosis, or treatment.</strong> Always
-        consult a qualified healthcare professional before making decisions about
-        quitting nicotine, especially if you have underlying health conditions or
-        use medications.
+        Quitify provides lifestyle content, habit tools, productivity planning,
+        and community features to help you build consistent daily routines.{" "}
+        <strong>
+          Quitify is a lifestyle and personal-development app. It is not a medical
+          device and does not provide medical advice, diagnosis, or treatment.
+        </strong>{" "}
+        It is not intended to diagnose, treat, cure, or prevent any disease or
+        health condition.
       </p>
       <p>
-        You use Quitify at your own risk. Quitify does not guarantee that you will
-        successfully quit smoking or achieve specific health outcomes.
+        You use Quitify at your own risk. Quitify does not guarantee specific
+        productivity or lifestyle outcomes. If you have questions about your
+        wellbeing, speak with a qualified professional.
       </p>
 
       <h2>4. Acceptable use</h2>
@@ -159,8 +163,12 @@ export default function TermsPage() {
 
       <h2>16. Contact</h2>
       <p>
-        Questions about these terms can be sent to{" "}
-        <a href="mailto:lahcini.moaa@gmail.com">lahcini.moaa@gmail.com</a>.
+        Quitify is developed by POTTY PAW LTD. Questions about these terms can be
+        sent through{" "}
+        <a href={COMPANY_WEBSITE_URL} target="_blank" rel="noopener noreferrer">
+          www.pottypawltd.com
+        </a>
+        .
       </p>
     </LegalPageLayout>
   );

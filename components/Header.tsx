@@ -70,7 +70,7 @@ export function Header() {
     };
   }, [menuOpen]);
 
-  // Next.js often skips hash scrolling after client navigations — handle it ourselves.
+  // Next.js often skips hash scrolling after client navigations; handle it ourselves.
   useEffect(() => {
     if (pathname !== "/") return;
 
@@ -116,13 +116,14 @@ export function Header() {
           className="group flex items-center gap-2.5 transition-transform hover:scale-[1.02] sm:gap-3"
           onClick={() => setMenuOpen(false)}
         >
-          <div className="flex h-9 w-9 items-center justify-center rounded-xl border border-border bg-section p-1.5 shadow-sm transition-shadow group-hover:shadow-md group-hover:shadow-primary/10 sm:h-10 sm:w-10">
+          <div className="relative h-9 w-9 overflow-hidden rounded-xl shadow-sm transition-shadow group-hover:shadow-md group-hover:shadow-primary/20 sm:h-10 sm:w-10">
             <Image
-              src="/logo.webp"
+              src="/logo.png"
               alt="Quitify logo"
-              width={32}
-              height={32}
-              className="h-full w-full object-contain"
+              width={80}
+              height={80}
+              className="h-full w-full object-cover"
+              priority
             />
           </div>
           <span className="font-display text-lg font-bold tracking-tight text-foreground">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { GooglePlayButton } from "@/components/GooglePlayButton";
@@ -9,9 +10,20 @@ export function Footer() {
     <footer className="mt-auto border-t border-border bg-section">
       <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-8 sm:flex-row sm:items-center sm:justify-between sm:px-6 sm:py-10">
         <div>
-          <p className="text-sm font-semibold text-foreground">Quitify</p>
+          <div className="flex items-center gap-2.5">
+            <div className="relative h-8 w-8 overflow-hidden rounded-lg">
+              <Image
+                src="/logo.png"
+                alt="Quitify logo"
+                width={64}
+                height={64}
+                className="h-full w-full object-cover"
+              />
+            </div>
+            <p className="text-sm font-semibold text-foreground">Quitify</p>
+          </div>
           <p className="mt-1 text-sm text-muted">
-            Your companion for a smoke free life.
+            Lifestyle habit tools for a more productive day.
           </p>
           <div className="mt-4">
             <GooglePlayButton />

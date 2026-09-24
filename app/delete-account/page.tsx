@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { LegalPageLayout } from "@/components/LegalPageLayout";
-
-const ACCOUNT_DELETION_EMAIL = "lahcini.moaa@gmail.com";
+import { COMPANY_SUPPORT_EMAIL, COMPANY_WEBSITE_URL } from "@/lib/company";
 
 export const metadata: Metadata = {
   title: "Delete Account",
@@ -27,7 +26,8 @@ export default function DeleteAccountPage() {
       <ol>
         <li>
           Send an email from the address linked to your Quitify account to{" "}
-          <a href={`mailto:${ACCOUNT_DELETION_EMAIL}`}>{ACCOUNT_DELETION_EMAIL}</a>.
+          <a href={`mailto:${COMPANY_SUPPORT_EMAIL}`}>{COMPANY_SUPPORT_EMAIL}</a>
+          {" "}(POTTY PAW LTD, the company behind Quitify).
         </li>
         <li>
           Use the subject line: <strong>Delete my Quitify account</strong>.
@@ -49,7 +49,7 @@ export default function DeleteAccountPage() {
       </p>
       <ul>
         <li>Your email address, username, and profile information</li>
-        <li>Quit journey data such as quit date, streaks, goals, and plan progress</li>
+        <li>Habit journey data such as start date, streaks, goals, and plan progress</li>
         <li>Posts, comments, and other community content you created</li>
         <li>Chat messages and call history linked to your account</li>
         <li>Push notification tokens and in-app preferences</li>
@@ -66,7 +66,7 @@ export default function DeleteAccountPage() {
 
       <h2>Before you delete</h2>
       <p>
-        Account deletion is permanent. You will lose access to your quit progress,
+        Account deletion is permanent. You will lose access to your habit progress,
         community posts, messages, and premium benefits tied to that account. If
         you only want to stop using the app, you can uninstall Quitify without
         deleting your account.
@@ -75,8 +75,11 @@ export default function DeleteAccountPage() {
       <h2>Questions</h2>
       <p>
         For privacy questions, see our{" "}
-        <Link href="/privacy">Privacy Policy</Link> or email{" "}
-        <a href={`mailto:${ACCOUNT_DELETION_EMAIL}`}>{ACCOUNT_DELETION_EMAIL}</a>.
+        <Link href="/privacy">Privacy Policy</Link> or contact POTTY PAW LTD at{" "}
+        <a href={COMPANY_WEBSITE_URL} target="_blank" rel="noopener noreferrer">
+          www.pottypawltd.com
+        </a>
+        .
       </p>
     </LegalPageLayout>
   );

@@ -20,15 +20,15 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: "Quitify | Quit Smoking, Your Way",
+    default: "Quitify | Lifestyle, Habit Tools & Productivity",
     template: "%s | Quitify",
   },
   description:
-    "Quitify helps you quit smoking with a personalized plan, craving tools, daily missions, and community support.",
+    "Quitify is a lifestyle and productivity app with habit tools, daily plans, progress tracking, and community accountability.",
   icons: {
-    icon: [{ url: "/logo.webp", type: "image/webp" }],
-    apple: [{ url: "/logo.webp", type: "image/webp" }],
-    shortcut: "/logo.webp",
+    icon: [{ url: "/logo.png", type: "image/png" }],
+    apple: [{ url: "/logo.png", type: "image/png" }],
+    shortcut: "/logo.png",
   },
 };
 
