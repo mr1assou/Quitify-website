@@ -1,7 +1,15 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { LegalPageLayout } from "@/components/LegalPageLayout";
-import { COMPANY_WEBSITE_URL } from "@/lib/company";
+import {
+  COMPANY_ADDRESS,
+  COMPANY_NAME,
+  COMPANY_PHONE,
+  COMPANY_PHONE_HREF,
+  COMPANY_SUPPORT_EMAIL,
+  COMPANY_WEBSITE_LABEL,
+  COMPANY_WEBSITE_URL,
+} from "@/lib/company";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions",
@@ -163,12 +171,14 @@ export default function TermsPage() {
 
       <h2>16. Contact</h2>
       <p>
-        Quitify is developed by POTTY PAW LTD. Questions about these terms can be
-        sent through{" "}
+        Quitify is developed by{" "}
         <a href={COMPANY_WEBSITE_URL} target="_blank" rel="noopener noreferrer">
-          www.pottypawltd.com
-        </a>
-        .
+          {COMPANY_NAME}
+        </a>{" "}
+        ({COMPANY_WEBSITE_LABEL}). Questions about these terms can be sent to{" "}
+        <a href={`mailto:${COMPANY_SUPPORT_EMAIL}`}>{COMPANY_SUPPORT_EMAIL}</a>,
+        by phone at <a href={COMPANY_PHONE_HREF}>{COMPANY_PHONE}</a>, or by post
+        to {COMPANY_ADDRESS}.
       </p>
     </LegalPageLayout>
   );

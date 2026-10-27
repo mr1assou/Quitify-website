@@ -1,7 +1,14 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { LegalPageLayout } from "@/components/LegalPageLayout";
-import { COMPANY_SUPPORT_EMAIL, COMPANY_WEBSITE_URL } from "@/lib/company";
+import {
+  COMPANY_ADDRESS,
+  COMPANY_NAME,
+  COMPANY_PHONE,
+  COMPANY_PHONE_HREF,
+  COMPANY_SUPPORT_EMAIL,
+  COMPANY_WEBSITE_URL,
+} from "@/lib/company";
 
 export const metadata: Metadata = {
   title: "Delete Account",
@@ -27,7 +34,7 @@ export default function DeleteAccountPage() {
         <li>
           Send an email from the address linked to your Quitify account to{" "}
           <a href={`mailto:${COMPANY_SUPPORT_EMAIL}`}>{COMPANY_SUPPORT_EMAIL}</a>
-          {" "}(POTTY PAW LTD, the company behind Quitify).
+          {" "}({COMPANY_NAME}, the company behind Quitify).
         </li>
         <li>
           Use the subject line: <strong>Delete my Quitify account</strong>.
@@ -75,9 +82,11 @@ export default function DeleteAccountPage() {
       <h2>Questions</h2>
       <p>
         For privacy questions, see our{" "}
-        <Link href="/privacy">Privacy Policy</Link> or contact POTTY PAW LTD at{" "}
+        <Link href="/privacy">Privacy Policy</Link> or contact {COMPANY_NAME} at{" "}
+        <a href={`mailto:${COMPANY_SUPPORT_EMAIL}`}>{COMPANY_SUPPORT_EMAIL}</a>,{" "}
+        <a href={COMPANY_PHONE_HREF}>{COMPANY_PHONE}</a>, {COMPANY_ADDRESS}, or{" "}
         <a href={COMPANY_WEBSITE_URL} target="_blank" rel="noopener noreferrer">
-          www.pottypawltd.com
+          {COMPANY_NAME}
         </a>
         .
       </p>

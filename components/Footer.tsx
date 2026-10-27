@@ -2,6 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { GooglePlayButton } from "@/components/GooglePlayButton";
+import {
+  COMPANY_ADDRESS,
+  COMPANY_NAME,
+  COMPANY_PHONE,
+  COMPANY_PHONE_HREF,
+  COMPANY_SUPPORT_EMAIL,
+  COMPANY_WEBSITE_URL,
+} from "@/lib/company";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -53,8 +61,32 @@ export function Footer() {
       </div>
 
       <div className="border-t border-border/70 px-4 py-4 sm:px-6">
-        <p className="mx-auto max-w-6xl text-center text-xs text-muted">
-          © {year} Quitify. All rights reserved.
+        <p className="mx-auto max-w-6xl text-center text-xs leading-6 text-muted">
+          © {year} Quitify. All rights reserved. App developed by{" "}
+          <a
+            href={COMPANY_WEBSITE_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-border underline-offset-2 transition-colors hover:text-primary"
+          >
+            {COMPANY_NAME}
+          </a>
+          .{" "}
+          <a
+            href={`mailto:${COMPANY_SUPPORT_EMAIL}`}
+            className="underline decoration-border underline-offset-2 transition-colors hover:text-primary"
+          >
+            {COMPANY_SUPPORT_EMAIL}
+          </a>
+          {" · "}
+          <a
+            href={COMPANY_PHONE_HREF}
+            className="underline decoration-border underline-offset-2 transition-colors hover:text-primary"
+          >
+            {COMPANY_PHONE}
+          </a>
+          {" · "}
+          {COMPANY_ADDRESS}
         </p>
       </div>
     </footer>
